@@ -1,0 +1,16 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+        <h1>Resultado de busqueda</h1>
+
+        <ul>
+            {% for curso in cursos %}
+                <li>
+                        {{curso.nombre}}
+
+                </li>
+            {%endfor%}
+
+
+        </ul>
+{% endblock contenidoQueCambia %}
